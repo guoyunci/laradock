@@ -546,12 +546,14 @@ ARG INSTALL_SWOOLE=false
 
 RUN set -eux; \
     if [ ${INSTALL_SWOOLE} = true ]; then \
-      curl -L -o /tmp/swoole.tar.gz https://github.com/swoole/swoole-src/archive/refs/tags/v4.6.4.tar.gz && \
+      curl -L -o /tmp/swoole.tar.gz https://github.com/swoole/swoole-src/archive/refs/tags/v4.6.7.tar.gz && \
       tar zxvf /tmp/swoole.tar.gz && cd swoole-src* && \
       phpize && \
       ./configure \
       --enable-openssl \
       --enable-http2 \
+      --enable-swoole-json \
+      --enable-swoole-curl \
       && make \
       && make test \
       && make install \
