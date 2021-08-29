@@ -994,3 +994,11 @@ GEARMAN_MYSQL_TABLE=gearman_queue
 
 ### ELK Stack ##################################################
 ELK_VERSION=7.9.1
+
+### HYPERF ##################################################
+HYPERF_PORT=9501
+HYPERF_WEBSOCKET_PORT=9502
+HYPERF_SWOOLE_VERSION=v4.7.1
+HYPERF_COMPOSER_VERSION=2.1.6
+HYPERF_ALPINE_VERSION=3.14
+HYPERF_PHP_VERSION=7.4

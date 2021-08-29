@@ -1957,6 +1957,7 @@ services:
         - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}${APP_CODE_CONTAINER_FLAG}
       ports:
         - ${HYPERF_PORT}:9501
+        - ${HYPERF_WEBSOCKET_PORT}:9502
       tty: true
       networks:
         - backend

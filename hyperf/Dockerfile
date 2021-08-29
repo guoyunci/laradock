@@ -58,7 +58,8 @@ RUN set -ex \
     && rm -rf /var/cache/apk/* /tmp/* /usr/share/man /usr/local/bin/php* \
     && echo -e "\033[42;37m Build Completed :).\033[0m\n" \
 
+
+EXPOSE 9501 9502
+
 # Set default work directory
 WORKDIR /var/www
-
-EXPOSE 9501
